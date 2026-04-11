@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +50,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        yoza: {
+          cream: "hsl(var(--yoza-cream))",
+          "warm-bg": "hsl(var(--yoza-warm-bg))",
+          navbar: "hsl(var(--yoza-navbar))",
+          "brown-dark": "hsl(var(--yoza-brown-dark))",
+          brown: "hsl(var(--yoza-brown))",
+          "brown-mid": "hsl(var(--yoza-brown-mid))",
+          "brown-light": "hsl(var(--yoza-brown-light))",
+          "brown-muted": "hsl(var(--yoza-brown-muted))",
+          orange: "hsl(var(--yoza-orange))",
+          "section-light": "hsl(var(--yoza-section-light))",
+          "section-warm": "hsl(var(--yoza-section-warm))",
+          footer: "hsl(var(--yoza-footer))",
+          "footer-dark": "hsl(var(--yoza-footer-dark))",
+          "contact-btn": "hsl(var(--yoza-contact-btn))",
+          "contact-btn-hover": "hsl(var(--yoza-contact-btn-hover))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +85,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
